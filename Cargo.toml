@@ -15,6 +15,11 @@ name = "cli"
 path = "src/cli.rs"
 
 
+[[bin]]
+name = "opencv"
+path = "src/opencv.rs"
+
+
 [dependencies]
 tonic = "0.8"
 prost = "0.11"
@@ -23,6 +28,8 @@ tokio-stream = { version = "0.1", features = ["net"] }
 futures = "0.3"
 clap = { version = "4.1.4", features = ["derive"] }
 tonic-reflection = "0.6.0"
+opencv = { version = "0.88.6" }
+clang-sys = "1.7.0"
 
 [build-dependencies]
 tonic-build = "0.8"
